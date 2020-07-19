@@ -1,27 +1,216 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
 
-body .my-bcg-leftcut {
+body header {
+  width: 100%;
+  height: 120vh;
+}
+
+body header .banner {
+  background-image: url("../img/banner.jpg");
+}
+
+body header .banner nav {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body header .banner nav .btn-group > a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+body header .banner nav .btn-group > a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25%;
+  -webkit-transform: 1s;
+          transform: 1s;
+}
+
+body header .banner .logobar {
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 25%;
+}
+
+body header .banner .logobar .logo-long {
+  height: 90%;
+  width: 30%;
+  background-image: url("../img/logo-2.png");
+}
+
+body section .container .row .about-01 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/about-us-1.jpg");
+}
+
+body section .container .row .about-02 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/about-us-2.jpg");
+}
+
+body section .container .row .main-card .circle {
+  width: 200px;
+  height: 200px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+body section .container .row .program-01 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/s3-wedding.jpg");
+}
+
+body section .container .row .program-02 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/s3-family.jpg");
+}
+
+body section .container .row .program-03 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/s3-friend.jpg");
+}
+
+body section .container .row .program-04 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/s3-baby.jpg");
+}
+
+body section .container-fluid .row .s4-pct-1 {
+  background-image: url("../img/s4-pct-1.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body section .container-fluid .row .s4-pct-2 {
+  background-image: url("../img/s4-pct-2.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body section .container-fluid .row .s4-pct-3 {
+  background-image: url("../img/s4-pct-3.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body section .container-fluid .row .s4-pct-4 {
+  background-image: url("../img/s4-pct-4.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body section .container-fluid .row .s4-pct-5 {
+  background-image: url("../img/s4-pct-5.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body section .container-fluid .row .s4-pct-6 {
+  background-image: url("../img/s4-pct-6.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body section .container-fluid .row .s4-pct-7 {
+  background-image: url("../img/s4-pct-7.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body section .container-fluid .row .s4-pct-8 {
+  background-image: url("../img/s4-pct-8.jpg");
+  width: 100%;
+  height: 400px;
+}
+
+body .bcg-leftcut {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
-body .my-bcg-rightcut {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+body .bcg-rightcut {
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
-body .my-pct {
+body .bcg-twocut {
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+}
+
+body .service-bcg {
+  background-image: url("../img/s2-wedding.jpg");
   width: 100%;
   height: 100%;
+}
+
+body .contact-bcg {
+  background-image: url("../img/s4-cover.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+body .s4-icon-group .s4-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+body .s4-icon-group .icon-1 {
+  background-image: url("../img/FB.png");
+}
+
+body .s4-icon-group .icon-2 {
+  background-image: url("../img/IG.png");
+}
+
+body .s4-icon-group .icon-3 {
+  background-image: url("../img/map.png");
+}
+
+body .pct {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .bcg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-body .my-text {
+body .pt-15vh {
+  padding-top: 15vh;
+}
+
+body .pb-15vh {
+  padding-bottom: 15vh;
+}
+
+body .text-color-2 {
+  color: #FFFFFF;
+}
+
+body .mask {
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  color: #3C3C3C;
+  height: 100%;
 }
 /*# sourceMappingURL=index.css.map */
