@@ -84,21 +84,24 @@ body
                             display: block
 
                     .hamber-line
-                        width: 150px
+                        width: 120px
                         height: 100%
                         padding-bottom: 15px
+                        @media screen and ( min-width: 1200px )
+                            width: 150px
 
                     li
                         display: none
                         background-color: $opacity-color
                         font-size: 20px
-                        width: 150px
+                        width: 120px
                         text-align: center
 
                         @media screen and ( min-width: 1200px )
                             display: block
                             background-color: unset
                             font-size: 24px
+                            width: 150px
                             
                         &:hover
                             background-color: $opacity-color
