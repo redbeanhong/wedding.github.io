@@ -1,0 +1,129 @@
+// 色卡設定
+$color-primary: #70C7DC;
+$color-second: #70C7C8;
+$color-mid: #67A9D9;
+$color-dark: #3D3E3C;
+$color-light: #ffffff;
+$color-hover: #044879;
+$color-link: #0798ff;
+
+.text-primary{color: $color-primary;}
+.text-second{color: $color-second;}
+.text-mid{color: $color-mid;}
+.text-dark{color: $color-dark;}
+.text-light{color: $color-light;}
+
+.bg-primary{background-color: $color-primary;}
+.bg-second{background-color: $color-second;}
+.bg-mid{background-color: $color-mid;}
+.bg-dark{background-color: $color-dark;}
+.bg-light{background-color: $color-light;}
+
+
+html,body{
+    // 字大小-手機
+    font-size: 14px;
+
+    // 字大小-平板
+    @media screen and(min-width: 768px) {
+        font-size: 16px;
+    }
+
+    // 字大小-電腦
+    @media screen and(min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+body{
+    // 字體
+    font-family: 'Poiret One','Noto Sans TC',Arial, sans-serif;
+
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $color-light;
+}
+    
+// 各級字型設定
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+span{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+// --------物件區---------//
+
+// 大按鈕尺寸
+.button-big{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 200px;
+    height: 80px;
+}
+
+// 小按鈕尺寸
+.button-small{
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 150px;
+    height: 60px;
+}
+
+// 按鈕顏色-標準色
+.button-color-primary{
+    background: linear-gradient(-20deg,$color-primary,$color-second);
+    color: $color-light;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration-line: none;
+}
+
+// 按鈕hover效果
+.button-big:hover,.button-small:hover{
+    background: $color-hover;
+}
+
+// 背景處理
+.bcg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.light-mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+}
+
+.dark-mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
