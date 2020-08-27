@@ -1,0 +1,321 @@
+
+// color變數
+$text-color:	#3C3C3C
+$text-color-2:	#FFFFFF
+$bcg-color: #000000
+$opacity-color: rgba(0, 0 ,0, 0.5)
+$opacity-color-2: rgba(0, 0 ,0, 0.8)
+
+html,body
+    font-size: 14px
+    
+    @media screen and ( min-width: 768px )
+        font-size: 18px
+    
+    @media screen and ( min-width: 1200px )
+        font-size: 20px
+
+
+html
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+
+body
+    margin: 0
+    //字型
+    font-family: 'Crimson Text','Noto Serif TC', serif
+    color: $text-color
+    
+    h1
+        font-size: 7rem
+
+    h2
+        font-size: 1.6rem
+        font-weight: 900
+        padding: calc( 0.36rem + 0.22rem ) 0 calc( 0.36rem - 0.22rem ) 0
+        margin: 0
+        letter-spacing: 2px
+
+    h3
+        font-size: 1.2rem
+        font-weight: 900
+        padding: calc(0.5rem + 0.2rem) 0 calc(0.5rem - 0.2rem) 0
+        margin: 0
+        letter-spacing: 0.8px
+
+    span
+        font-size: 1rem
+        font-weight: 400
+        padding: calc(0.25rem + 2px) 0 0.25rem 0
+        margin: 0
+        letter-spacing: 0.8px
+
+    p
+        font-size: 1rem
+        font-weight: 400
+        padding: calc(0.25rem + 2px) 0 0.25rem 0
+        margin: 0
+        line-height: 2rem
+        letter-spacing: 0.8px
+        text-align: justify
+
+    header
+        width: 100%
+        height: 120vh
+
+        .banner
+            background-image: url('../img/banner.jpg')
+            
+            nav
+                height: 70px
+                width: 100%
+                background-color: $opacity-color
+                @media screen and ( min-width: 1200px )
+                    height: 90px
+                
+                .nav-btn-group
+                    list-style: none
+                    font-size: 60px
+                    color: $text-color-2
+                    
+                    &:hover
+                        &>li
+                            display: block
+
+                    .hamber-line
+                        width: 120px
+                        height: 100%
+                        padding-bottom: 15px
+                        @media screen and ( min-width: 1200px )
+                            width: 150px
+
+                    li
+                        display: none
+                        background-color: $opacity-color
+                        font-size: 20px
+                        width: 120px
+                        text-align: center
+
+                        @media screen and ( min-width: 1200px )
+                            display: block
+                            background-color: unset
+                            font-size: 24px
+                            width: 150px
+                            
+                        &:hover
+                            background-color: $opacity-color
+                            font-size: 28px
+                        a
+                            line-height: 90px
+                            text-decoration: none
+                            color: $text-color-2
+
+            .logobar
+                width: 100%
+                height: 20%
+                background-color: $opacity-color
+                bottom: 20%
+
+
+                .logo-long
+                    height: 90%
+                    width: 40%
+                    background-image: url('../img/logo-2.png')
+    
+    section
+        .container
+            .row
+                .about-01
+                    width: 100%
+                    height: 500px
+                    background-image: url('../img/about-us-1.jpg')
+
+                .about-02
+                    width: 100%
+                    height: 500px
+                    background-image: url('../img/about-us-2.jpg')
+
+                .main-card
+                    
+                    .circle
+                        width: 150px
+                        height: 150px
+                        background: $text-color-2
+                        border-radius: 50%
+                        
+                        //電腦   
+                        @media screen and ( min-width: 1200px)
+                            width: 200px
+                            height: 200px
+
+                .program-01
+                    width: 100%
+                    height: 500px
+                    background-image: url('../img/s3-wedding.jpg')
+
+                .program-02
+                    width: 100%
+                    height: 500px
+                    background-image: url('../img/s3-family.jpg')
+
+                .program-03
+                    width: 100%
+                    height: 500px
+                    background-image: url('../img/s3-friend.jpg')
+
+                .program-04
+                    width: 100%
+                    height: 500px
+                    background-image: url('../img/s3-baby.jpg')
+
+                
+
+        .container-fluid
+            .row
+                .s4-pct-szie
+                    width: 100%
+                    height: 250px
+                    //電腦   
+                    @media screen and ( min-width: 1200px)
+                        height: 400px
+                
+                .s4-pct-1
+                    background-image: url('../img/s4-pct-1.jpg')
+
+                .s4-pct-2
+                    background-image: url('../img/s4-pct-2.jpg')
+
+                .s4-pct-3
+                    background-image: url('../img/s4-pct-3.jpg')
+
+                .s4-pct-4
+                    background-image: url('../img/s4-pct-4.jpg')
+
+                .s4-pct-5
+                    background-image: url('../img/s4-pct-5.jpg')
+
+                .s4-pct-6
+                    background-image: url('../img/s4-pct-6.jpg')
+
+                .s4-pct-7
+                    background-image: url('../img/s4-pct-7.jpg')
+
+                .s4-pct-8
+                    background-image: url('../img/s4-pct-8.jpg')
+
+                .s4-icon-group
+                    .s4-icon
+                        width: 70px
+                        height: 70px
+                        border-radius: 50%
+
+                        //電腦   
+                        @media screen and ( min-width: 1200px)
+                            width: 90px
+                            height: 90px
+
+                    .icon-1
+                        background-image: url('../img/FB.png')
+
+                    .icon-2
+                        background-image: url('../img/IG.png')
+
+                    .icon-3
+                        background-image: url('../img/map.png')
+
+    //背景區
+    .bcg-leftcut
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%)
+            
+    .bcg-rightcut
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%)
+
+    .bcg-twocut
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%)
+
+    .service-bcg
+        background-image: url('../img/s2-wedding.jpg')
+        width: 100%
+        height: 100%
+
+    .contact-bcg
+        background-image: url('../img/s4-cover.jpg')
+        width: 100%
+        height: 100%
+
+
+    //物件屬性區
+    
+    .pct
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+
+    .bcg
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+
+    .pt-15vh
+        padding-top: 15vh
+
+    .pb-15vh
+        padding-bottom: 15vh
+    
+    .pt-150
+        
+        //平板   
+        @media screen and ( min-width: 768px)
+            padding-top: 150px
+    .vh-xl-100
+        
+        //電腦   
+        @media screen and ( min-width: 1200px)
+            height: 100vh
+
+    .text-color-2
+        color: $text-color-2
+
+    .mask
+        background-color: $opacity-color
+        width: 100%
+        height: 100%
+
+    .fake-section
+        position: absolute
+        top: -50px
+        //平板   
+        @media screen and ( min-width: 768px)
+            top: -100px
+
+    .text-indent-2
+        text-indent: 2rem
+
+    .gototop
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        background-color: #f5a8e4
+        display: flex
+        align-items: center
+        justify-content: center
+        text-decoration: none
+        color: $text-color-2
+        position: fixed
+        bottom: 20px
+        right: 20px
+
+        &:hover
+            transform: scale(1.2)
+
+        &:active
+            transform: rotate(30deg)
+
+        //電腦   
+        @media screen and ( min-width: 1200px)
+            width: 90px
+            height: 90px
+
+    .z-10
+        z-index: 10
