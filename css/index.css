@@ -115,6 +115,11 @@ body header .banner nav .nav-btn-group li {
   text-align: center;
 }
 
+body header .banner nav .nav-btn-group li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 28px;
+}
+
 @media screen and (min-width: 1200px) {
   body header .banner nav .nav-btn-group li {
     display: block;
@@ -122,11 +127,6 @@ body header .banner nav .nav-btn-group li {
     font-size: 24px;
     width: 150px;
   }
-}
-
-body header .banner nav .nav-btn-group li:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 28px;
 }
 
 body header .banner nav .nav-btn-group li a {
