@@ -116,7 +116,6 @@ body header .banner nav .nav-btn-group li {
 }
 
 body header .banner nav .nav-btn-group li:hover {
-  background-color: rgba(0, 0, 0, 0.5);
   font-size: 28px;
 }
 
